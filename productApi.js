@@ -19,7 +19,6 @@ app.listen(port, () => console.log(`Node app listening on port ${port}!`));
 let { data } = require("./productData.js");
 let fs = require("fs");
 let fName = "productData.json";
-let readline = require("readline-sync");
 
 app.get("/data", function (req, res) {
   let data1 = JSON.stringify(data);
